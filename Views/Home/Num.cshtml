@@ -1,0 +1,15 @@
+@model int[]
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/num">Num</a></li>
+    <li><a href="/list">List</a></li>
+    <li><a href="/user">User</a></li>
+</ul>
+<h1>Here are some numbers</h1>
+@{
+    foreach(var p in @Model)
+    {
+        <h1>@p</h1>
+    }
+}
+

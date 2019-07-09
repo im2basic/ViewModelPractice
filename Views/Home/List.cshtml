@@ -1,0 +1,17 @@
+@using ViewModel.Models
+@model List<MyModel>
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/num">Num</a></li>
+    <li><a href="/list">List</a></li>
+    <li><a href="/user">User</a></li>
+</ul>
+
+
+@{
+    foreach(var p in @Model)
+    {
+        <h1>@p.FirstName @p.LastName</h1>
+    }
+}
+
